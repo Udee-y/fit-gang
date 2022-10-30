@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+html{
+  font-family: "Karla", sans-serif;
+
+}
+.bck-ground{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../src/assets/hero-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+.scrolled {
+  @apply shadow-2xl;
+  border-bottom: 0px;
+  background-color: #f3f3f3;
+
+}
+#overlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 95%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3); 
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  }
+  a {
+    color: #42b983;
+  }
+  button {
+    background-color: #42b983;
+  }
+  .hero{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 12px;
+  }
+  .submit:hover{
+    color: #42b983;
+    background-color: white;
+  }
+  .link{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+  }
+  .about{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./assets/about-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 70vh;
+    color: white;
+  }
+  .width{
+    width: 87%;
+  }
+  .register{
+    width: 40%;
+  }
+  .member{
+    background-image: linear-gradient(rgba(245, 239, 239, 0.5),rgba(240, 238, 238, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
